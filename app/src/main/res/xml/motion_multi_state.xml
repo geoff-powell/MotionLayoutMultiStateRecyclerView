@@ -7,13 +7,15 @@
     <Transition
             app:constraintSetStart="@id/expanded"
             app:constraintSetEnd="@id/base"
+            app:autoTransition="animateToEnd"
+            app:duration="300"
     >
 
         <OnSwipe
                 app:touchAnchorId="@+id/recycler_view"
                 app:touchAnchorSide="top"
                 app:dragDirection="dragUp"
-                app:onTouchUp="autoCompleteToStart"
+                app:onTouchUp="autoCompleteToEnd"
         />
 
     </Transition>
@@ -21,6 +23,7 @@
     <Transition
             app:constraintSetStart="@id/base"
             app:constraintSetEnd="@id/collapsed"
+            app:duration="300"
     >
 
         <OnSwipe

@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d(TAG, "onTransitionChange start $startId end $endId progress $progress")
             }
 
-            override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
+            override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
                 Log.d(TAG, "onTransitionCompleted currentId $currentId ")
             }
         })
