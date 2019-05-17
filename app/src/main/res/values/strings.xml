@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MotionLayoutMultiStateRecyclerView</string>
+    <string name="header">Header</string>
+</resources>
